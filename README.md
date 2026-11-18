@@ -10,8 +10,6 @@ A harness to automate deploying code to UTCS Linux hosts for testing. Output is 
   - `nl_helper.sh` — builds timestamped log file names.
 - `deploy.sh` — entry point. Picks a host via `gethost`, runs `service.sh` on it over SSH, and writes the output to a timestamped log in `LOG_DIR`.
 
-Note: the `scp` step that copies your code to the remote host is currently commented out in `deploy.sh`.
-
 ## Usage
 Prerequisites: Rust/`cargo`, and SSH access to UTCS hosts (key-based auth recommended, since the script runs non-interactively).
 
