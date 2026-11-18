@@ -1,2 +1,2 @@
-remote/constants.sh
-remote/service.sh
+remote/user_constants.sh
+service/service.sh
