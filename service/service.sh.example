@@ -1,5 +1,7 @@
-// script to compile and run the file Huff.java in the directory ~/HuffOut/src/main/java
 // put anything you want here, as long as it's self-contained.
+
+// script to compile and run the file Huff.java in the directory ~/HuffOut/src/main/java
+// by copying and compiling files in the ~/HuffOut/output directory.
 run() {
     local root="$1"
     local file_name="$2"
