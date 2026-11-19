@@ -1,0 +1,5 @@
+readonly USER="ajkhm"
+readonly CURRENT_DIR="/Users/ajkhambekar/Desktop/allassignments/CS314/Graphs"
+readonly REMOTE_DIR="/u/ajkhm/GraphOut"
+readonly LOG_DIR="/Users/ajkhambekar/Desktop/allassignments/CS314/Graphs/logs"
+readonly LOG_PREFIX="deploy"
