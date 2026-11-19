@@ -1,10 +1,8 @@
 readonly path=$(DIR=$(pwd) ; cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd ; cd "$DIR")
 
-source "$path/remote/constants.sh"
 source "$path/remote/user_constants.sh"
 source "$path/remote/nl_helper.sh"
 
-echo "Scraper: $SCRAPER_LOCATION"
 echo "User: $USER"
 
 mkdir -p "$LOG_DIR"
