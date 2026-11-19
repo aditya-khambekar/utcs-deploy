@@ -60,7 +60,7 @@ fn run(args: Args) -> Result<i32> {
 
     println!("Log path: {}", log_path.display());
     let log = File::create(&log_path)?;
-    remote::run_script(&args.user, &host, &script, log)
+    remote::run_script(&args.user, &host, &args.remote_dir, &script, log)
 }
 
 fn main() -> ExitCode {

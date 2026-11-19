@@ -5,7 +5,7 @@ A command-line tool that copies a local directory to a UTCS Linux host, runs a b
 A single Rust binary.
 - `src/main.rs` — CLI arguments and orchestration.
 - `src/host.rs` — picks a random host that is `up` on the UTCS unix lab status page (`<host>.cs.utexas.edu`).
-- `src/remote.rs` — copies the directory with `scp -r`, then pipes your script into `ssh`, writing its output to the log.
+- `src/remote.rs` — copies the contents of `--local-dir` directly into `--remote-dir` (created if missing) by piping `tar` over `ssh`, then pipes your script into `ssh` to run in `--remote-dir`, writing its output to the log.
 - `src/log.rs` — builds timestamped log file names.
 
 ## Usage
