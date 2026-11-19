@@ -1,8 +1,7 @@
 use std::str::FromStr;
 use scraper::{Html, Selector};
 
-#[tokio::main]
-async fn main(){
+pub async fn get_random() -> String {
     let url = "https://apps.cs.utexas.edu/unixlabstatus/";
     let response = reqwest::get(url).await.unwrap();
     let body = response.text().await.unwrap();
@@ -26,5 +25,5 @@ async fn main(){
         }
     }
 
-    println!("{}.cs.utexas.edu", hosts[(rand::random::<u64>() % hosts.len() as u64) as usize].0.clone().unwrap())
+    hosts[(rand::random::<u64>() % hosts.len() as u64) as usize].0.clone().unwrap() + ".cs.utexas.edu"
 }
