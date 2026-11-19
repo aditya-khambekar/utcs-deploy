@@ -1,2 +1,3 @@
-remote/user_constants.sh
+target
+logs
 service/service.sh

@@ -1,7 +1,0 @@
-readonly USER="your_utcs_username"
-
-readonly CURRENT_DIR="/absolute/path/to/your/repo"
-readonly REMOTE_DIR="/u/your_utcs_username/path/to/remote"
-
-readonly LOG_DIR="$CURRENT_DIR/logs"
-readonly LOG_PREFIX="java"
